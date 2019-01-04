@@ -67,6 +67,10 @@ class Operaciones(object):#Creamos el objeto Operaciones
     def __init__(self, listado):#Contructor de la clase Operaciones que recibe listado
         self.listado_equipo = listado
 
-    #Metodo para ordenar la lista
-    def ordenar(self):
+    #Metodo para ordenar la lista por nombres
+    def ordenarNombres(self):
         return sorted(self.listado_equipo, key = lambda equipo: equipo.nombres)
+
+    #Metodo para ordenar la lista por campeonatos
+    def ordenarCampeonatos(self):
+        return sorted(self.listado_equipo, key = lambda equipo: equipo.campeonatos)
